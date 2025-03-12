@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="example.micronaut.GenreRepositoryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-03-12T07:03:02" hostname="poseidon" time="0.156">
+  <properties/>
+  <testcase name="testSaveGenre()" classname="example.micronaut.GenreRepositoryTest" time="0.156"/>
+  <system-out><![CDATA[?[36m18:03:01.043?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mi.m.c.DefaultApplicationContext$RuntimeConfiguredEnvironment?[0;39m - Established active environments: [test]
+?[36m18:03:01.115?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mi.m.s.ObjectMappers$ObjectMapperContext$1?[0;39m - Established active environments: [test]
+?[36m18:03:01.974?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.zaxxer.hikari.HikariDataSource?[0;39m - HikariPool-1 - Starting...
+?[36m18:03:02.042?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.zaxxer.hikari.pool.HikariPool?[0;39m - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@382c90c2
+?[36m18:03:02.042?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.zaxxer.hikari.HikariDataSource?[0;39m - HikariPool-1 - Start completed.
+?[36m18:03:02.109?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mi.m.flyway.AbstractFlywayMigration?[0;39m - Running migrations for database with qualifier [default]
+?[36m18:03:02.125?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35morg.flywaydb.core.FlywayExecutor?[0;39m - Database: jdbc:postgresql://localhost:51666/test?loggerLevel=OFF (PostgreSQL 17.4)
+?[36m18:03:02.146?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.f.c.i.s.JdbcTableSchemaHistory?[0;39m - Schema history table "public"."flyway_schema_history" does not exist yet
+?[36m18:03:02.147?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.f.core.internal.command.DbValidate?[0;39m - Successfully validated 1 migration (execution time 00:00.007s)
+?[36m18:03:02.158?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.f.c.i.s.JdbcTableSchemaHistory?[0;39m - Creating Schema History table "public"."flyway_schema_history" ...
+?[36m18:03:02.179?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.f.core.internal.command.DbMigrate?[0;39m - Current version of schema "public": << Empty Schema >>
+?[36m18:03:02.182?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.f.core.internal.command.DbMigrate?[0;39m - Migrating schema "public" to version "1 - schema"
+?[36m18:03:02.184?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.f.c.i.s.DefaultSqlScriptExecutor?[0;39m - DB: table "genre" does not exist, skipping
+?[36m18:03:02.196?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.f.core.internal.command.DbMigrate?[0;39m - Successfully applied 1 migration to schema "public", now at version v1 (execution time 00:00.005s)
+?[36m18:03:02.209?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mi.m.l.PropertiesLoggingLevelsConfigurer?[0;39m - Setting log level 'DEBUG' for logger: 'io.micronaut.data'
+?[36m18:03:02.359?[0;39m ?[1;30m[Test worker]?[0;39m ?[39mDEBUG?[0;39m ?[35mi.m.d.r.c.DefaultR2dbcReactorConnectionOperations?[0;39m - Opening Connection for R2DBC configuration: default and definition: DefaultConnectionDefinition[name=testSaveGenre(), propagationBehavior=REQUIRED, timeout=null, readOnlyValue=null]
+?[36m18:03:02.448?[0;39m ?[1;30m[reactor-tcp-nio-1]?[0;39m ?[39mDEBUG?[0;39m ?[35mi.m.d.r.t.DefaultR2dbcReactorTransactionOperations?[0;39m - Transaction begin for R2DBC connection: PostgresqlConnection{client=io.r2dbc.postgresql.client.ReactorNettyClient@249fb58a, codecs=io.r2dbc.postgresql.codec.DefaultCodecs@1a744142} and configuration default.
+?[36m18:03:02.478?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[39mDEBUG?[0;39m ?[35mio.micronaut.data.query?[0;39m - Executing SQL query: INSERT INTO "genre" ("name") VALUES ($1)
+?[36m18:03:02.478?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[39mDEBUG?[0;39m ?[35mi.m.d.r.o.DefaultR2dbcRepositoryOperations?[0;39m - INSERT INTO "genre" ("name") VALUES ($1)
+?[36m18:03:02.493?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[39mDEBUG?[0;39m ?[35mio.micronaut.data.query?[0;39m - Executing Query: SELECT genre_."id",genre_."name" FROM "genre" genre_
+?[36m18:03:02.498?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[39mDEBUG?[0;39m ?[35mi.m.d.r.t.DefaultR2dbcReactorTransactionOperations?[0;39m - Rolling back transaction for R2DBC connection: PostgresqlConnection{client=io.r2dbc.postgresql.client.ReactorNettyClient@249fb58a, codecs=io.r2dbc.postgresql.codec.DefaultCodecs@1a744142} and configuration default.
+?[36m18:03:02.501?[0;39m ?[1;30m[reactor-tcp-nio-1]?[0;39m ?[39mDEBUG?[0;39m ?[35mi.m.d.r.c.DefaultR2dbcReactorConnectionOperations?[0;39m - Closing Connection for R2DBC configuration: default and definition: DefaultConnectionDefinition[name=testSaveGenre(), propagationBehavior=REQUIRED, timeout=null, readOnlyValue=null]
+?[36m18:03:02.516?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.zaxxer.hikari.HikariDataSource?[0;39m - HikariPool-1 - Shutdown initiated...
+?[36m18:03:02.545?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.zaxxer.hikari.HikariDataSource?[0;39m - HikariPool-1 - Shutdown completed.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
